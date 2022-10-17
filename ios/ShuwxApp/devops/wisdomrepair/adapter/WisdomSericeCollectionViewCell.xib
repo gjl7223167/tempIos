@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WisdomSericeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="237" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="237" height="168"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meX-MM-UAE">
+                        <rect key="frame" x="0.0" y="0.0" width="237" height="168"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90t-So-z73" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="68.5" y="10" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LAO-Rf-t60"/>
+                                    <constraint firstAttribute="width" constant="100" id="a2h-wt-2E1"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7天内未接" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2T-MV-FEG">
+                                <rect key="frame" x="20" y="120" width="65" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afj-e0-sq5">
+                                <rect key="frame" x="90" y="118" width="11" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYu-Es-PJg">
+                                <rect key="frame" x="106" y="120" width="14.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GYu-Es-PJg" firstAttribute="leading" secondItem="afj-e0-sq5" secondAttribute="trailing" constant="5" id="0AW-MU-URb"/>
+                            <constraint firstItem="afj-e0-sq5" firstAttribute="top" secondItem="90t-So-z73" secondAttribute="bottom" constant="8" id="5Ng-Kc-0jE"/>
+                            <constraint firstItem="J2T-MV-FEG" firstAttribute="leading" secondItem="meX-MM-UAE" secondAttribute="leading" constant="20" id="ABh-rb-F1S"/>
+                            <constraint firstItem="90t-So-z73" firstAttribute="centerX" secondItem="meX-MM-UAE" secondAttribute="centerX" id="Mcg-7R-gKW"/>
+                            <constraint firstItem="GYu-Es-PJg" firstAttribute="top" secondItem="90t-So-z73" secondAttribute="bottom" constant="10" id="ZIo-gE-zrc"/>
+                            <constraint firstItem="90t-So-z73" firstAttribute="top" secondItem="meX-MM-UAE" secondAttribute="top" constant="10" id="hM8-Ws-9cZ"/>
+                            <constraint firstItem="afj-e0-sq5" firstAttribute="leading" secondItem="J2T-MV-FEG" secondAttribute="trailing" constant="5" id="jI9-UD-AVV"/>
+                            <constraint firstItem="J2T-MV-FEG" firstAttribute="top" secondItem="90t-So-z73" secondAttribute="bottom" constant="10" id="lvK-C8-jjY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="meX-MM-UAE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Caa-Sp-QRg"/>
+                <constraint firstAttribute="bottom" secondItem="meX-MM-UAE" secondAttribute="bottom" id="Vhz-nf-g0P"/>
+                <constraint firstAttribute="trailing" secondItem="meX-MM-UAE" secondAttribute="trailing" id="xhh-fY-dse"/>
+                <constraint firstItem="meX-MM-UAE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zMM-nd-gJq"/>
+            </constraints>
+            <size key="customSize" width="237" height="168"/>
+            <connections>
+                <outlet property="orderSunValue" destination="afj-e0-sq5" id="s9A-UY-IcF"/>
+                <outlet property="pieView" destination="90t-So-z73" id="IsM-bi-Zhn"/>
+                <outlet property="weakNoOrder" destination="J2T-MV-FEG" id="1YR-kN-fgw"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="71.651785714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>

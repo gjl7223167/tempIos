@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TypeTwoTableViewCell" rowHeight="123" id="KGk-i7-Jjw" customClass="TypeTwoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u43-2h-9kB">
+                        <rect key="frame" x="16" y="0.0" width="288" height="123"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数量" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AED-DA-zLU">
+                                <rect key="frame" x="10" y="51.5" width="29" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="6as-yi-xmz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XmX-wx-Yt5">
+                                <rect key="frame" x="188" y="44.5" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="H8r-Qc-MxL"/>
+                                    <constraint firstAttribute="height" constant="34" id="gDC-ub-yZ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lz7-0j-muv">
+                                <rect key="frame" x="0.0" y="122" width="288" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="clY-cw-ACc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfC-b1-2GD">
+                                <rect key="frame" x="0.0" y="51" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XfC-b1-2GD" firstAttribute="centerY" secondItem="u43-2h-9kB" secondAttribute="centerY" id="6SN-B2-hoa"/>
+                            <constraint firstItem="lz7-0j-muv" firstAttribute="leading" secondItem="u43-2h-9kB" secondAttribute="leading" id="Ny6-6P-0ki"/>
+                            <constraint firstItem="AED-DA-zLU" firstAttribute="centerY" secondItem="u43-2h-9kB" secondAttribute="centerY" id="Re5-0D-uNO"/>
+                            <constraint firstAttribute="trailing" secondItem="lz7-0j-muv" secondAttribute="trailing" id="SF3-eH-b3v"/>
+                            <constraint firstItem="AED-DA-zLU" firstAttribute="leading" secondItem="u43-2h-9kB" secondAttribute="leading" constant="10" id="UYY-Ef-aGM"/>
+                            <constraint firstItem="XfC-b1-2GD" firstAttribute="leading" secondItem="u43-2h-9kB" secondAttribute="leading" id="bxc-28-mlf"/>
+                            <constraint firstAttribute="bottom" secondItem="lz7-0j-muv" secondAttribute="bottom" id="dBf-O2-EVM"/>
+                            <constraint firstAttribute="trailing" secondItem="XmX-wx-Yt5" secondAttribute="trailing" id="pJK-4g-Cbp"/>
+                            <constraint firstItem="XmX-wx-Yt5" firstAttribute="centerY" secondItem="u43-2h-9kB" secondAttribute="centerY" id="raH-1V-PIN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="u43-2h-9kB" secondAttribute="trailing" constant="16" id="JHI-dw-rhv"/>
+                    <constraint firstItem="u43-2h-9kB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Uhm-g7-hP7"/>
+                    <constraint firstItem="u43-2h-9kB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="m1e-CF-1vY"/>
+                    <constraint firstAttribute="bottom" secondItem="u43-2h-9kB" secondAttribute="bottom" id="oN0-ZM-IDH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="inputTF" destination="XmX-wx-Yt5" id="wIi-QD-ddV"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="106.13839285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssignedDeptViewController">
+            <connections>
+                <outlet property="allView" destination="EFf-g1-Hk7" id="Cf9-G9-w6b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFf-g1-Hk7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Vfh-92-lIC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="KWO-cQ-iX3"/>
+                            </constraints>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Vfh-92-lIC" firstAttribute="top" secondItem="EFf-g1-Hk7" secondAttribute="top" id="66U-5o-LR5"/>
+                        <constraint firstAttribute="trailing" secondItem="Vfh-92-lIC" secondAttribute="trailing" id="6yT-6o-DkE"/>
+                        <constraint firstItem="Vfh-92-lIC" firstAttribute="leading" secondItem="EFf-g1-Hk7" secondAttribute="leading" id="P2f-Ur-LvZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EFf-g1-Hk7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0k3-0A-bFf"/>
+                <constraint firstAttribute="trailing" secondItem="EFf-g1-Hk7" secondAttribute="trailing" id="Ba9-8a-Inf"/>
+                <constraint firstAttribute="bottom" secondItem="EFf-g1-Hk7" secondAttribute="bottom" id="R8D-uF-Adq"/>
+                <constraint firstItem="EFf-g1-Hk7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oAv-Kf-Vck"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="82"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

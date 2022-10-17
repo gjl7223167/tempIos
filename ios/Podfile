@@ -1,0 +1,111 @@
+source 'https://github.com/CocoaPods/Specs'
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+use_frameworks!
+
+xcodeproj 'ShuwxApp.xcodeproj'
+
+def commonPods
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  
+  # 友盟基础库
+  pod 'UMCommon'
+  pod 'UMDevice'
+  #友盟稳定分析   （UMCCommonLog日志库  可在发布前移除）
+  pod 'UMAPM'
+  pod 'UMCCommonLog'
+  #  友盟推送
+  pod 'UMPush'
+  pod 'UMCSecurityPlugins'
+  
+  
+  pod 'PPNetworkHelper'
+  #   pod 'KSPhotoBrowser'
+  #    pod 'BaiduMapKit' #百度地图SDK
+  pod 'BMKLocationKit'
+  pod 'MOFSPickerManager'
+  #   pod 'WRNavigationBar','~>1.2.0’
+  pod 'FMDB'
+  pod 'LBXScan/LBXNative','~> 2.5'
+  pod 'LBXScan/LBXZXing','~> 2.5'
+  pod 'LBXZBarSDK','~> 1.3'
+  pod 'LBXScan/UI','~> 2.5'
+  pod 'CWLateralSlide'
+  pod 'FFRouter'
+  #    pod 'YYModel'
+  pod 'Masonry'
+  pod 'pop'
+  pod 'UICountingLabel'
+  pod 'Charts'
+  pod 'SGPagingView', '~> 1.7.2'
+  pod 'MJRefresh'
+  pod 'YYWebImage'
+  pod 'SDCycleScrollView'
+  pod 'PGPickerView'
+  pod 'TFDropDownMenu'
+  pod 'SocketRocket'
+  
+  pod 'RMQClient'
+  pod 'PGPickerView'
+  pod 'MJExtension'
+  
+  #  pod 'MLeaksFinder'
+  #  pod 'FBRetainCycleDetector'
+  
+  #  pod 'HXWeiboPhotoPicker'
+  pod 'SDWebImage'
+  pod 'FLAnimatedImage', '~> 1.0.12'
+  #pod 'FSJUtility'
+  #pod 'TZImagePickerController'
+  
+  #pod 'SDWebImage/Core'
+  #pod 'SDWebImage/GIF'
+  
+  pod 'HXPhotoPicker'
+  # 使用SDWebImage加载网络图片
+  pod 'HXPhotoPicker/SDWebImage_AF'
+  pod 'LBVideoPlayerViewController'
+  pod 'XHGAlertView', :subspecs =>['customizeMenuView']
+  
+  pod 'ProgressHUD', :git => 'https://github.com/relatedcode/ProgressHUD.git', :commit =>  '83c3801e9aa69be157a47c40cdd8702bfaf29213'
+  
+  pod 'JhtMarquee'
+  pod 'SSZipArchive'
+#  pod 'ZBOrientation'
+  
+  # 使用YYWebImage加载网络图片
+  #  pod 'HXPhotoPicker/YYWebImage', '~> 3.1.8'
+  
+  
+  #    pod 'ChartsRealm'
+  #  pod 'HXWeiboPhotoPicker', '~> 2.0.4'
+  
+  # Pods for ShuwxApp
+  
+  # 去掉由pod引入的第三方库的警告，需要更新命令才生效
+  inhibit_all_warnings!
+  
+  # pod 快速更新方法
+  # pod update --verbose --no-repo-update
+end
+
+target 'ShuwxApp' do
+  commonPods
+  target 'ShuwxAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  
+  target 'ShuwxAppUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end
+
+target 'yh' do
+  commonPods
+end
+
+target 'zhongzy' do
+  commonPods
+end

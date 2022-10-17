@@ -1,0 +1,6 @@
+framework module TFDropDownMenu {
+  umbrella header "TFDropDownMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

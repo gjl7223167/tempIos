@@ -1,0 +1,6 @@
+framework module Pods_ShuwxApp {
+  umbrella header "Pods-ShuwxApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

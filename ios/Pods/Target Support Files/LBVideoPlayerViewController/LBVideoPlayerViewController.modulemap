@@ -1,0 +1,6 @@
+framework module LBVideoPlayerViewController {
+  umbrella header "LBVideoPlayerViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

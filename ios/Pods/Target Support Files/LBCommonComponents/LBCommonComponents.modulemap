@@ -1,0 +1,6 @@
+framework module LBCommonComponents {
+  umbrella header "LBCommonComponents-umbrella.h"
+
+  export *
+  module * { export * }
+}

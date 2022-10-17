@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="123" id="KGk-i7-Jjw" customClass="RepairDeviceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6A0-nU-INR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zo-c1-bDC">
+                                <rect key="frame" x="10" y="53" width="35" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0zo-c1-bDC" firstAttribute="leading" secondItem="6A0-nU-INR" secondAttribute="leading" constant="10" id="EJt-j9-dc6"/>
+                            <constraint firstItem="0zo-c1-bDC" firstAttribute="centerY" secondItem="6A0-nU-INR" secondAttribute="centerY" id="xJy-r1-tdZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6A0-nU-INR" secondAttribute="bottom" id="3Sp-hx-Tcs"/>
+                    <constraint firstAttribute="trailing" secondItem="6A0-nU-INR" secondAttribute="trailing" id="9ab-Jy-sqD"/>
+                    <constraint firstItem="6A0-nU-INR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SfB-0B-Pep"/>
+                    <constraint firstItem="6A0-nU-INR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uM1-Rg-4H0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="deviceName" destination="0zo-c1-bDC" id="U5R-eo-BM3"/>
+                <outlet property="repairView" destination="6A0-nU-INR" id="yea-6w-eqF"/>
+            </connections>
+            <point key="canvasLocation" x="107" y="98"/>
+        </tableViewCell>
+    </objects>
+</document>

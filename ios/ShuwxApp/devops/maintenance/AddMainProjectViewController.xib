@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddMainProjectViewController">
+            <connections>
+                <outlet property="addMainButton" destination="L5p-K3-Z2s" id="IJr-z3-PuC"/>
+                <outlet property="allView" destination="cu7-Yl-ehN" id="iwv-aV-Tdg"/>
+                <outlet property="mainScrollView" destination="Lbk-Nl-4wM" id="zNj-Yk-zmE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lbk-Nl-4wM">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="846"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cu7-Yl-ehN">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="846"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tp1-BP-YlW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j74-xm-EN0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="ajQ-YO-vVn"/>
+                                            </constraints>
+                                            <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="可选维保项" image="bsline">
+                                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXw-D8-8TY">
+                                            <rect key="frame" x="0.0" y="50" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="gRY-QY-emh"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="bXw-D8-8TY" firstAttribute="leading" secondItem="Tp1-BP-YlW" secondAttribute="leading" id="I39-MZ-tmx"/>
+                                        <constraint firstItem="j74-xm-EN0" firstAttribute="top" secondItem="Tp1-BP-YlW" secondAttribute="top" id="PRO-H3-nXI"/>
+                                        <constraint firstAttribute="trailing" secondItem="j74-xm-EN0" secondAttribute="trailing" id="aH8-Tc-GHb"/>
+                                        <constraint firstAttribute="trailing" secondItem="bXw-D8-8TY" secondAttribute="trailing" id="aP8-1b-f0B"/>
+                                        <constraint firstItem="bXw-D8-8TY" firstAttribute="top" secondItem="j74-xm-EN0" secondAttribute="bottom" id="e49-Yo-Z3k"/>
+                                        <constraint firstItem="j74-xm-EN0" firstAttribute="leading" secondItem="Tp1-BP-YlW" secondAttribute="leading" id="iZT-TM-wv4"/>
+                                        <constraint firstAttribute="height" constant="51" id="oPO-Ko-V9g"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="Tp1-BP-YlW" firstAttribute="top" secondItem="cu7-Yl-ehN" secondAttribute="top" id="5n1-sf-oiq"/>
+                                <constraint firstAttribute="trailing" secondItem="Tp1-BP-YlW" secondAttribute="trailing" id="FHD-TC-wGj"/>
+                                <constraint firstItem="Tp1-BP-YlW" firstAttribute="leading" secondItem="cu7-Yl-ehN" secondAttribute="leading" id="Qqx-YM-PeH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cu7-Yl-ehN" secondAttribute="trailing" id="91M-Xv-VOx"/>
+                        <constraint firstItem="cu7-Yl-ehN" firstAttribute="centerY" secondItem="Lbk-Nl-4wM" secondAttribute="centerY" id="Wsi-vL-VLZ"/>
+                        <constraint firstAttribute="bottom" secondItem="cu7-Yl-ehN" secondAttribute="bottom" id="YCl-sa-UG0"/>
+                        <constraint firstItem="cu7-Yl-ehN" firstAttribute="leading" secondItem="Lbk-Nl-4wM" secondAttribute="leading" id="bpA-Z8-RA7"/>
+                        <constraint firstItem="cu7-Yl-ehN" firstAttribute="centerX" secondItem="Lbk-Nl-4wM" secondAttribute="centerX" id="iVO-cd-S7m"/>
+                        <constraint firstItem="cu7-Yl-ehN" firstAttribute="top" secondItem="Lbk-Nl-4wM" secondAttribute="top" id="mhG-ls-Bfq"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5p-K3-Z2s">
+                    <rect key="frame" x="0.0" y="846" width="414" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.53725490200000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NXn-DK-tEc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Lbk-Nl-4wM" secondAttribute="trailing" id="Cnh-hY-NlC"/>
+                <constraint firstItem="Lbk-Nl-4wM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hyq-5F-6b1"/>
+                <constraint firstAttribute="bottom" secondItem="L5p-K3-Z2s" secondAttribute="bottom" id="gli-lv-8zn"/>
+                <constraint firstAttribute="trailing" secondItem="L5p-K3-Z2s" secondAttribute="trailing" id="kCn-20-XmR"/>
+                <constraint firstItem="L5p-K3-Z2s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sqr-DX-eqE"/>
+                <constraint firstAttribute="bottom" secondItem="Lbk-Nl-4wM" secondAttribute="bottom" constant="50" id="tSZ-5r-xcS"/>
+                <constraint firstItem="Lbk-Nl-4wM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wA2-2Z-NhA"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="83"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bsline" width="3" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SubOneCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="219"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="251" height="219"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTH-a8-Hup">
+                        <rect key="frame" x="0.0" y="0.0" width="251" height="219"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fds-Zy-ige">
+                                <rect key="frame" x="10" y="102" width="15" height="15"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="OYK-aP-dlb"/>
+                                    <constraint firstAttribute="width" constant="15" id="Uhe-yx-tlW"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选项1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Ypw-gy-dtp">
+                                <rect key="frame" x="35" y="99.5" width="206" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="aH0-6T-dbJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ypw-gy-dtp" secondAttribute="trailing" constant="10" id="AuK-Mt-HSb"/>
+                            <constraint firstItem="Fds-Zy-ige" firstAttribute="leading" secondItem="yTH-a8-Hup" secondAttribute="leading" constant="10" id="TER-lf-0Nk"/>
+                            <constraint firstItem="Ypw-gy-dtp" firstAttribute="centerY" secondItem="yTH-a8-Hup" secondAttribute="centerY" id="baw-Gr-Xz7"/>
+                            <constraint firstItem="Ypw-gy-dtp" firstAttribute="leading" secondItem="Fds-Zy-ige" secondAttribute="trailing" constant="10" id="iMV-iK-vyZ"/>
+                            <constraint firstItem="Fds-Zy-ige" firstAttribute="centerY" secondItem="yTH-a8-Hup" secondAttribute="centerY" id="wnE-6u-c09"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="yTH-a8-Hup" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="J7Z-YE-JRY"/>
+                <constraint firstAttribute="bottom" secondItem="yTH-a8-Hup" secondAttribute="bottom" id="X8j-fh-6IE"/>
+                <constraint firstAttribute="trailing" secondItem="yTH-a8-Hup" secondAttribute="trailing" id="xhR-Vh-A0f"/>
+                <constraint firstItem="yTH-a8-Hup" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ytG-6f-cPY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="251" height="219"/>
+            <connections>
+                <outlet property="xuanxView" destination="Fds-Zy-ige" id="ggP-0M-c48"/>
+                <outlet property="xxName" destination="Ypw-gy-dtp" id="KEU-uh-DDA"/>
+            </connections>
+            <point key="canvasLocation" x="32.608695652173914" y="43.191964285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

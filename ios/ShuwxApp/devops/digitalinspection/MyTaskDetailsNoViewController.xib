@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyTaskDetailsNoViewController">
+            <connections>
+                <outlet property="cancelBtn" destination="hS3-oq-gN9" id="nPB-5k-i5a"/>
+                <outlet property="submitBtn" destination="Vou-5b-PIg" id="sfZ-yM-JQf"/>
+                <outlet property="uitableView" destination="zuy-wX-Egv" id="GtK-9X-lHa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zuy-wX-Egv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="846"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="F0i-9e-7YI"/>
+                        <outlet property="delegate" destination="-1" id="Xpg-q3-LQx"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cd0-hb-VMO">
+                    <rect key="frame" x="0.0" y="846" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hS3-oq-gN9">
+                            <rect key="frame" x="0.0" y="0.0" width="207" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="0FB-dd-5z1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.0" green="0.53725490200000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vou-5b-PIg">
+                            <rect key="frame" x="207" y="0.0" width="207" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.53725490200000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="D8H-te-cwB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="提交审核">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Vou-5b-PIg" firstAttribute="leading" secondItem="hS3-oq-gN9" secondAttribute="trailing" id="3yM-Sh-CNH"/>
+                        <constraint firstItem="hS3-oq-gN9" firstAttribute="leading" secondItem="Cd0-hb-VMO" secondAttribute="leading" id="9gY-0i-Mj2"/>
+                        <constraint firstItem="Vou-5b-PIg" firstAttribute="width" secondItem="Cd0-hb-VMO" secondAttribute="width" multiplier="0.5" id="Bmt-zo-nbW"/>
+                        <constraint firstAttribute="height" constant="50" id="IM2-A5-fzg"/>
+                        <constraint firstItem="hS3-oq-gN9" firstAttribute="width" secondItem="Cd0-hb-VMO" secondAttribute="width" multiplier="0.5" id="fVH-U0-sJx"/>
+                        <constraint firstItem="Vou-5b-PIg" firstAttribute="centerY" secondItem="Cd0-hb-VMO" secondAttribute="centerY" id="mFb-Bk-ENB"/>
+                        <constraint firstItem="hS3-oq-gN9" firstAttribute="centerY" secondItem="Cd0-hb-VMO" secondAttribute="centerY" id="mpB-sP-vPa"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="1rn-Ch-HzR"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zuy-wX-Egv" secondAttribute="trailing" id="Z3M-fv-2m6"/>
+                <constraint firstItem="zuy-wX-Egv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aUy-yV-6Fo"/>
+                <constraint firstItem="zuy-wX-Egv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b7f-Tl-Dia"/>
+                <constraint firstItem="Cd0-hb-VMO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fpy-Zg-QSy"/>
+                <constraint firstAttribute="trailing" secondItem="Cd0-hb-VMO" secondAttribute="trailing" id="lFG-Z0-1zu"/>
+                <constraint firstItem="Cd0-hb-VMO" firstAttribute="top" secondItem="zuy-wX-Egv" secondAttribute="bottom" id="lU3-nC-X1r"/>
+                <constraint firstAttribute="bottom" secondItem="Cd0-hb-VMO" secondAttribute="bottom" id="vMI-gK-DW4"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignalViewController">
+            <connections>
+                <outlet property="clearBtn" destination="ef7-Q1-R82" id="pN3-Cz-5J7"/>
+                <outlet property="kongjView" destination="lqk-cg-6NT" id="PIh-02-eZH"/>
+                <outlet property="saveBtn" destination="woV-fw-czT" id="Smn-iu-0ib"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqk-cg-6NT">
+                    <rect key="frame" x="30" y="826" width="324" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woV-fw-czT">
+                            <rect key="frame" x="10" y="-5" width="162" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.53725490200000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="qeK-8w-ZM4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="保存">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-Q1-R82">
+                            <rect key="frame" x="192" y="-5" width="162" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="5M1-3u-CbA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="清除">
+                                <color key="titleColor" red="0.0" green="0.53725490200000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="A1T-Dg-On1"/>
+                        <constraint firstItem="woV-fw-czT" firstAttribute="width" secondItem="lqk-cg-6NT" secondAttribute="width" multiplier="0.5" id="OSK-g2-rwv"/>
+                        <constraint firstItem="ef7-Q1-R82" firstAttribute="top" secondItem="lqk-cg-6NT" secondAttribute="top" constant="-5" id="Vna-O4-nbO"/>
+                        <constraint firstItem="woV-fw-czT" firstAttribute="leading" secondItem="lqk-cg-6NT" secondAttribute="leading" constant="10" id="aT0-G9-2wh"/>
+                        <constraint firstItem="ef7-Q1-R82" firstAttribute="width" secondItem="lqk-cg-6NT" secondAttribute="width" multiplier="0.5" id="dXS-sr-4HR"/>
+                        <constraint firstItem="ef7-Q1-R82" firstAttribute="leading" secondItem="woV-fw-czT" secondAttribute="trailing" constant="20" id="eb2-5j-Pke"/>
+                        <constraint firstItem="woV-fw-czT" firstAttribute="top" secondItem="lqk-cg-6NT" secondAttribute="top" constant="-5" id="i2b-Df-Iem"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lqk-cg-6NT" secondAttribute="trailing" constant="60" id="FPU-w4-Ejj"/>
+                <constraint firstAttribute="bottom" secondItem="lqk-cg-6NT" secondAttribute="bottom" constant="20" id="RrL-FF-WCB"/>
+                <constraint firstItem="lqk-cg-6NT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="caF-4T-cPO"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="82"/>
+        </view>
+    </objects>
+</document>

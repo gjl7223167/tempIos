@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnalyzeViewController">
+            <connections>
+                <outlet property="chartView" destination="0HC-gy-vJo" id="Nr9-gL-9ZB"/>
+                <outlet property="curMonthButton" destination="YBl-sI-Hjk" id="Bab-yq-NbJ"/>
+                <outlet property="selectDate" destination="YSg-bR-yyD" id="FGF-H3-7B0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKS-7L-vel">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XV5-hF-QZH">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                            <subviews>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YSg-bR-yyD">
+                                    <rect key="frame" x="20" y="30" width="150" height="31"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="0tK-Oi-I8w"/>
+                                        <constraint firstAttribute="height" constant="30" id="SQm-bS-vGm"/>
+                                    </constraints>
+                                    <segments>
+                                        <segment title="故障"/>
+                                        <segment title="告警"/>
+                                    </segments>
+                                    <color key="selectedSegmentTintColor" systemColor="linkColor"/>
+                                </segmentedControl>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBl-sI-Hjk">
+                                    <rect key="frame" x="293" y="30" width="72" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="72" id="ArE-gD-OTX"/>
+                                        <constraint firstAttribute="height" constant="25" id="smR-Bf-tfW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="本月" image="xiajiant">
+                                        <color key="titleColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HC-gy-vJo" customClass="BarChartView" customModule="Charts">
+                                    <rect key="frame" x="0.0" y="110" width="375" height="300"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="300" id="GVf-fM-3c5"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="0HC-gy-vJo" secondAttribute="trailing" id="1OS-fA-khj"/>
+                                <constraint firstItem="0HC-gy-vJo" firstAttribute="leading" secondItem="XV5-hF-QZH" secondAttribute="leading" id="6FL-f9-fgb"/>
+                                <constraint firstAttribute="height" constant="800" id="Ciu-6B-5o1"/>
+                                <constraint firstItem="0HC-gy-vJo" firstAttribute="top" secondItem="YSg-bR-yyD" secondAttribute="bottom" constant="50" id="HrB-na-ZH1"/>
+                                <constraint firstItem="YSg-bR-yyD" firstAttribute="top" secondItem="XV5-hF-QZH" secondAttribute="top" constant="30" id="Tos-xi-tIc"/>
+                                <constraint firstAttribute="trailing" secondItem="YBl-sI-Hjk" secondAttribute="trailing" constant="10" id="V8g-e0-ZG7"/>
+                                <constraint firstItem="YSg-bR-yyD" firstAttribute="leading" secondItem="XV5-hF-QZH" secondAttribute="leading" constant="20" id="YI7-yB-xfH"/>
+                                <constraint firstItem="YBl-sI-Hjk" firstAttribute="top" secondItem="XV5-hF-QZH" secondAttribute="top" constant="30" id="pdx-Ha-M5J"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="XV5-hF-QZH" firstAttribute="top" secondItem="sKS-7L-vel" secondAttribute="top" id="AB6-dR-2uP"/>
+                        <constraint firstItem="XV5-hF-QZH" firstAttribute="centerX" secondItem="sKS-7L-vel" secondAttribute="centerX" id="b7Z-Qx-sud"/>
+                        <constraint firstItem="XV5-hF-QZH" firstAttribute="leading" secondItem="sKS-7L-vel" secondAttribute="leading" id="e1k-R6-Pgv"/>
+                        <constraint firstAttribute="bottom" secondItem="XV5-hF-QZH" secondAttribute="bottom" id="eYc-tT-MLX"/>
+                        <constraint firstAttribute="trailing" secondItem="XV5-hF-QZH" secondAttribute="trailing" id="zQa-gw-hMM"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sKS-7L-vel" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9zY-cP-cBd"/>
+                <constraint firstAttribute="bottom" secondItem="sKS-7L-vel" secondAttribute="bottom" id="OFe-3j-hQD"/>
+                <constraint firstItem="sKS-7L-vel" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QmM-6k-lEy"/>
+                <constraint firstAttribute="trailing" secondItem="sKS-7L-vel" secondAttribute="trailing" id="rgH-ym-lAg"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="134"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xiajiant" width="13" height="7.6666665077209473"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
